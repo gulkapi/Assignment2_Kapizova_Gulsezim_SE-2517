@@ -1,29 +1,30 @@
  Assignment 2: Object-Oriented Student Management System (Kapizova Gulsezim SE_2517)
 Project: Vehicle Management System
+I will write everything point by point.
 
- A. Project Overview
+A. Project Overview
 This Vehicle Management System demonstrates core Object-Oriented Programming principles 
 including inheritance, composition, aggregation, and abstraction. 
 The system models different types of vehicles (Car, Motorcycle, Truck) that share common 
 characteristics through inheritance from an abstract Vehicle class.
 
- B. Class Hierarchy
+B. Class Hierarchy
  Superclass: Vehicle (Abstract)
-- **Fields**: `brand` (String), `year` (int) - both protected
-- **Abstract Methods**: `startEngine()`, `stopEngine()`
-- **Concrete Method**: `displayInfo()`
-- **Access Modifiers**: Protected fields allow subclass access while maintaining encapsulation
+- Fields: `brand` (String), `year` (int) - both protected
+- Abstract Methods: `startEngine()`, `stopEngine()`
+- Concrete Method: `displayInfo()`
+- Access Modifiers: Protected fields allow subclass access while maintaining encapsulation
 
  Subclasses:
-1. **Car**
+1. "Car"
    - Additional fields: `doors` (int), `fuelType` (String)
    - Overrides: `startEngine()`, `stopEngine()`
 
-2. **Motorcycle**
+2. "Motorcycle"
    - Additional field: `hasSidecar` (boolean)
    - Overrides: `startEngine()`, `stopEngine()`
 
-3. **Truck**
+3. "Truck"
    - Additional fields: `capacity` (double), `numAxles` (int)
    - Overrides: `startEngine()`, `stopEngine()`
 
@@ -31,16 +32,14 @@ characteristics through inheritance from an abstract Vehicle class.
 - Demonstrates composition (Vehicle HAS-A Driver)
 - Demonstrates aggregation (Driver MAY-HAVE multiple Vehicles)
 
- C. Instructions to Compile and Run
- 
+C. Instructions to Compile and Run
 1. Compile all Java files
 javac src/*.java
-
 2. Run the main program
 cd src
 java Main
 
- E. Reflection Section
+E. Reflection Section
 1. Inheritance allowed me to create a common base class (Vehicle) that encapsulates shared 
 properties and behaviors. This eliminated code duplication and made the system more 
 maintainable. 
