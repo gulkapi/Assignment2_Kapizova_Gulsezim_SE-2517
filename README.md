@@ -10,23 +10,23 @@ characteristics through inheritance from an abstract Vehicle class.
 
 B. Class Hierarchy
  Superclass: Vehicle (Abstract)
-- Fields: `brand` (String), `year` (int) - both protected
-- Abstract Methods: `startEngine()`, `stopEngine()`
-- Concrete Method: `displayInfo()`
+- Fields: brand (String), year (int) - both protected
+- Abstract Methods: startEngine(), stopEngine()
+- Concrete Method: displayInfo()
 - Access Modifiers: Protected fields allow subclass access while maintaining encapsulation
 
  Subclasses:
 1. "Car"
-   - Additional fields: `doors` (int), `fuelType` (String)
-   - Overrides: `startEngine()`, `stopEngine()`
+   - Additional fields: doors (int), fuelType (String)
+   - Overrides: startEngine(), stopEngine()
 
 2. "Motorcycle"
-   - Additional field: `hasSidecar` (boolean)
-   - Overrides: `startEngine()`, `stopEngine()`
+   - Additional field: hasSidecar (boolean)
+   - Overrides: startEngine(), stopEngine()
 
 3. "Truck"
-   - Additional fields: `capacity` (double), `numAxles` (int)
-   - Overrides: `startEngine()`, `stopEngine()`
+   - Additional fields: capacity(double), numAxles(int)
+   - Overrides: startEngine(), stopEngine()
 
  Driver Class
 1.Demonstrates composition (Vehicle HAS-A Driver)
@@ -43,7 +43,7 @@ E. Reflection Section
 1. Inheritance allowed me to create a common base class (Vehicle) that encapsulates shared 
 properties and behaviors. This eliminated code duplication and made the system more 
 maintainable. 
-2. Each vehicle subclass overrides the `startEngine()`and `stopEngine()` 
+2. Each vehicle subclass overrides the startEngine() and stopEngine()
 methods to provide vehicle-specific implementations.
 3. I used protected for the vehicle fields so subclasses could access them directly, 
 but this felt a bit too open. I added getters to be safer. Using default (no modifier) 
