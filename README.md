@@ -10,10 +10,10 @@ characteristics through inheritance from an abstract Vehicle class.
 
 B. Class Hierarchy
  Superclass: Vehicle (Abstract):
-- Fields: brand (String), year (int) - both protected
-- Abstract Methods: startEngine(), stopEngine()
-- Concrete Method: displayInfo()
-- Access Modifiers: Protected fields allow subclass access while maintaining encapsulation
+1. Fields: brand (String), year (int) - both protected
+2. Abstract Methods: startEngine(), stopEngine()
+3. Concrete Method: displayInfo()
+4. Access Modifiers: Protected fields allow subclass access while maintaining encapsulation
 
  Subclasses:
 1. "Car"
