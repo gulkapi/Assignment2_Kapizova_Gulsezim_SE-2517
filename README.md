@@ -9,7 +9,7 @@ The system models different types of vehicles (Car, Motorcycle, Truck) that shar
 characteristics through inheritance from an abstract Vehicle class.
 
 B. Class Hierarchy
- Superclass: Vehicle (Abstract)
+ Superclass: Vehicle (Abstract):
 - Fields: brand (String), year (int) - both protected
 - Abstract Methods: startEngine(), stopEngine()
 - Concrete Method: displayInfo()
